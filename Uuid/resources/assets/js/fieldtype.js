@@ -27,6 +27,10 @@ Vue.component('uuid-fieldtype', {
     },
   },
 
+  created: function() {
+    this.data = this.data || uuidv4()
+  },
+
   ready: function() {
     if (this.config.hidden) {
       this.hide()

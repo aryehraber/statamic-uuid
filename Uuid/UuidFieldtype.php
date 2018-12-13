@@ -13,7 +13,7 @@ class UuidFieldtype extends Fieldtype
      */
     public function blank()
     {
-        return (string) \Uuid::generate(4);
+        return null;
     }
 
     /**
