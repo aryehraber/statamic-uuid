@@ -1,6 +1,16 @@
 name: Uuid
-version: 1.1
+version: 1.2
 description: One of its kind; unlike anything else
 url: https://statamic.com/marketplace/addons/uuid
 developer: Series Eight
 developer_url: https://serieseight.com
+fieldtype_fields:
+  readonly:
+    type: toggle
+    width: 33
+  hidden:
+    type: toggle
+    width: 33
+  prefix:
+    type: text
+    width: 33
