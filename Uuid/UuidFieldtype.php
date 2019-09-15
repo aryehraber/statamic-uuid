@@ -6,6 +6,8 @@ use Statamic\Extend\Fieldtype;
 
 class UuidFieldtype extends Fieldtype
 {
+    public $category = ['special'];
+
     /**
      * The blank/default value
      *

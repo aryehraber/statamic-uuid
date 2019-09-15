@@ -4,20 +4,23 @@ Vue.component('uuid-fieldtype', {
   template: '<div><input class="form-control" :class="{ \'bg-grey-light\': readonly }" v-model="data" :type="type" :readonly="readonly"></div>',
 
   computed: {
-    type: function() {
+    type: function () {
       return this.config.hidden ? 'hidden' : 'text'
     },
-    readonly: function() {
+    readonly: function () {
       return this.config.readonly || false
+    },
+    prefix: function () {
+      return this.config.prefix || ''
     },
   },
 
   methods: {
-    hide: function() {
+    hide: function () {
       var el = this.$el
       var uuidClass = 'uuid-fieldtype'
 
-      while (! el.classList.contains(uuidClass) && el.parentNode) {
+      while (!el.classList.contains(uuidClass) && el.parentNode) {
         el = el.parentNode
       }
 
@@ -27,11 +30,11 @@ Vue.component('uuid-fieldtype', {
     },
   },
 
-  created: function() {
-    this.data = this.data || uuidv4()
+  created: function () {
+    this.data = this.data || this.prefix + uuidv4()
   },
 
-  ready: function() {
+  ready: function () {
     if (this.config.hidden) {
       this.hide()
     }

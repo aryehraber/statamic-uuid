@@ -14,3 +14,4 @@ Inside your fieldset, simply use `type: uuid` and a UUID will be generated for t
 |------|---------|-------------|
 | `hidden` | `false` | Hide the field from the CP while still generating a UUID. |
 | `readonly` | `false` | Set the input to readonly, stopping the user from editing the field. |
+| `prefix` | `''` | Add a prefix to the ID |
