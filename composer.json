@@ -1,0 +1,13 @@
+{
+    "name": "serieseight/statamic-uuid",
+    "homepage": "https://github.com/serieseight/statamic-uuid",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aryeh Raber",
+            "email": "aryeh@serieseight.com",
+            "homepage": "https://serieseight.com",
+            "role": "Developer"
+        }
+    ]
+}
