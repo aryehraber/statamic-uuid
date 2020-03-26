@@ -1,25 +1,25 @@
 <?php
 
-namespace Statamic\Addons\Uuid;
+namespace SeriesEight\Uuid\Fieldtypes;
 
-use Statamic\Extend\Fieldtype;
+use Statamic\Fields\Fieldtype;
 
-class UuidFieldtype extends Fieldtype
+class Uuid extends Fieldtype
 {
     public $category = ['special'];
 
     /**
-     * The blank/default value
+     * The blank/default value.
      *
      * @return array
      */
-    public function blank()
+    public function defaultValue()
     {
         return null;
     }
 
     /**
-     * Pre-process the data before it gets sent to the publish page
+     * Pre-process the data before it gets sent to the publish page.
      *
      * @param mixed $data
      * @return array|mixed
@@ -30,7 +30,7 @@ class UuidFieldtype extends Fieldtype
     }
 
     /**
-     * Process the data before it gets saved
+     * Process the data before it gets saved.
      *
      * @param mixed $data
      * @return array|mixed
