@@ -6,7 +6,7 @@ use Statamic\Fields\Fieldtype;
 
 class Uuid extends Fieldtype
 {
-    public $category = ['special'];
+    protected $icon = 'code';
 
     /**
      * The blank/default value.
