@@ -8,6 +8,27 @@ class Uuid extends Fieldtype
 {
     protected $icon = 'code';
 
+    protected $configFields = [
+        'prefix' => [
+            'type' => 'text',
+            'default' => '',
+            'instructions' => 'Add a default prefix to the UUID.',
+            'width' => 50,
+        ],
+        'hidden' => [
+            'type' => 'toggle',
+            'default' => false,
+            'instructions' => 'Enable to hide field from Entry create/edit view.',
+            'width' => 50,
+        ],
+        'readonly' => [
+            'type' => 'toggle',
+            'default' => false,
+            'instructions' => 'Enable to make the field readonly.',
+            'width' => 50,
+        ],
+    ];
+
     /**
      * The blank/default value.
      *
