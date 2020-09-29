@@ -9,7 +9,7 @@ This fieldtype auto-generates UUIDs for empty fields. This can be useful if you 
 Install the addon via composer:
 
 ```
-composer require serieseight/statamic-uuid:dev-statamic-3
+composer require serieseight/statamic-uuid
 ```
 
 Publish the fieldtype assets:
