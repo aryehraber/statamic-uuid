@@ -21,7 +21,7 @@ export default {
       return this.config.hidden ? 'hidden' : 'text'
     },
     readonly() {
-      return this.config.readonly || false
+      return this.config.read_only || this.config.readonly || false
     },
     prefix() {
       return this.config.prefix || ''
