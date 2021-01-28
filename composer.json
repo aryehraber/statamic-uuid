@@ -1,5 +1,5 @@
 {
-    "name": "serieseight/statamic-uuid",
+    "name": "aryehraber/statamic-uuid",
     "type": "statamic-addon",
     "description": "One of its kind; unlike anything else",
     "keywords": [
@@ -7,21 +7,21 @@
         "fieldtype",
         "uuid"
     ],
-    "homepage": "https://github.com/serieseight/statamic-uuid",
+    "homepage": "https://github.com/aryehraber/statamic-uuid",
     "license": "MIT",
     "require": {
         "statamic/cms": "3.0.*"
     },
     "autoload": {
         "psr-4": {
-            "SeriesEight\\Uuid\\": "src"
+            "AryehRaber\\Uuid\\": "src"
         }
     },
     "authors": [
         {
             "name": "Aryeh Raber",
-            "email": "aryeh@serieseight.com",
-            "homepage": "https://serieseight.com",
+            "email": "aryeh.raber@gmail.com",
+            "homepage": "https://aryeh.dev",
             "role": "Developer"
         }
     ],
@@ -29,11 +29,11 @@
         "statamic": {
             "name": "Uuid",
             "description": "One of its kind; unlike anything else",
-            "version": "2.0.1"
+            "version": "2.0.2"
         },
         "laravel": {
             "providers": [
-                "SeriesEight\\Uuid\\UuidServiceProvider"
+                "AryehRaber\\Uuid\\UuidServiceProvider"
             ]
         }
     }

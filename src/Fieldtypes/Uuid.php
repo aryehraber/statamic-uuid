@@ -1,6 +1,6 @@
 <?php
 
-namespace SeriesEight\Uuid\Fieldtypes;
+namespace AryehRaber\Uuid\Fieldtypes;
 
 use Statamic\Fields\Fieldtype;
 

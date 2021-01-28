@@ -1,8 +1,8 @@
 <?php
 
-namespace SeriesEight\Uuid;
+namespace AryehRaber\Uuid;
 
-use SeriesEight\Uuid\Fieldtypes\Uuid;
+use AryehRaber\Uuid\Fieldtypes\Uuid;
 use Statamic\Providers\AddonServiceProvider;
 
 class UuidServiceProvider extends AddonServiceProvider

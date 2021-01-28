@@ -9,13 +9,13 @@ This fieldtype auto-generates UUIDs for empty fields. This can be useful if you 
 Install the addon via composer:
 
 ```
-composer require serieseight/statamic-uuid
+composer require AryehRaber/statamic-uuid
 ```
 
 Publish the fieldtype assets:
 
 ```
-php artisan vendor:publish --provider="SeriesEight\Uuid\UuidServiceProvider"
+php artisan vendor:publish --provider="AryehRaber\Uuid\UuidServiceProvider"
 ```
 
 ## Usage
