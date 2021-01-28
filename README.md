@@ -82,3 +82,7 @@ sections:
         uuid: 5a7534a8-27bf-4ac6-8549-d3b429a61ff3
         type: value
 ```
+
+## Credits
+
+Originally built at [Series Eight](https://github.com/serieseight), now maintained by [Aryeh Raber](https://github.com/aryehraber).
