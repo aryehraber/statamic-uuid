@@ -29,7 +29,7 @@
         "statamic": {
             "name": "Uuid",
             "description": "One of its kind; unlike anything else",
-            "version": "2.0.2"
+            "version": "2.0.3"
         },
         "laravel": {
             "providers": [
