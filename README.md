@@ -28,7 +28,7 @@ Inside your blueprint, simply use `type: uuid` and a UUID will be generated for 
 |------|---------|-------------|
 | `hidden` | `false` | Hide the field from the CP while still generating a UUID. |
 | `read_only` | `false` | Set the input to read-only, stopping the user from editing the field. |
-| `prefix` | `''` | Add a prefix to the ID |
+| `id_prefix` | `''` | Add a prefix to the ID |
 
 ### Example:
 
