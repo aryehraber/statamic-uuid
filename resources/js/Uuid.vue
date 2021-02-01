@@ -24,7 +24,7 @@ export default {
       return this.config.read_only || this.config.readonly || false
     },
     prefix() {
-      return this.config.prefix || ''
+      return this.config.id_prefix || ''
     },
   },
 

@@ -9,7 +9,7 @@ class Uuid extends Fieldtype
     protected $icon = 'code';
 
     protected $configFields = [
-        'prefix' => [
+        'id_prefix' => [
             'type' => 'text',
             'default' => '',
             'instructions' => 'Add a default prefix to the UUID.',
