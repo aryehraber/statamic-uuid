@@ -28,7 +28,10 @@ Inside your blueprint, simply use `type: uuid` and a UUID will be generated for 
 |------|---------|-------------|
 | `hidden` | `false` | Hide the field from the CP while still generating a UUID. |
 | `read_only` | `false` | Set the input to read-only, stopping the user from editing the field. |
-| `id_prefix` | `''` | Add a prefix to the ID |
+| `id_prefix` | `''` | Add a prefix to the ID. |
+| `id_type` | `uuid` | Set the underlying ID generator, options: `uuid` & `nanoid`. |
+| `alphabet` | `null` | Set a custom alphabet when using `nanoid`. |
+| `size` | `null` | Set the max character limit when using `nanoid`. |
 
 ### Example:
 
@@ -58,6 +61,9 @@ fields:
                         handle: uuid
                         field:
                           type: uuid
+                          id_type: nanoid
+                          alphabet: ABCD1234
+                          size: 5
 ```
 
 **Output**
@@ -69,17 +75,17 @@ sections:
     type: section
     fields:
       -
-        uuid: b07389fe-8760-4f81-8c35-50779bd43b61
+        uuid: A4C11
         type: value
   -
     uuid: 4a7ce0b0-0483-42d9-a7b0-ce0201dd9c84
     type: section
     fields:
       -
-        uuid: b07389fe-8760-4f81-8c35-50779bd43b61
+        uuid: B1CB3
         type: value
       -
-        uuid: 5a7534a8-27bf-4ac6-8549-d3b429a61ff3
+        uuid: 41CD1
         type: value
 ```
 

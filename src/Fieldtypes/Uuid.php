@@ -9,12 +9,6 @@ class Uuid extends Fieldtype
     protected $icon = 'code';
 
     protected $configFields = [
-        'id_prefix' => [
-            'type' => 'text',
-            'default' => '',
-            'instructions' => 'Add a default prefix to the UUID.',
-            'width' => 50,
-        ],
         'hidden' => [
             'type' => 'toggle',
             'default' => false,
@@ -26,6 +20,33 @@ class Uuid extends Fieldtype
             'default' => false,
             'instructions' => 'Enable to make the field readonly.',
             'width' => 50,
+        ],
+        'id_prefix' => [
+            'type' => 'text',
+            'default' => '',
+            'instructions' => 'Add a default prefix to the ID.',
+            'width' => 50,
+        ],
+        'id_type' => [
+            'type' => 'select',
+            'default' => 'uuid',
+            'options' => ['uuid', 'nanoid'],
+            'instructions' => 'Set the underlying ID generator.',
+            'width' => 33,
+        ],
+        'alphabet' => [
+            'type' => 'text',
+            'default' => null,
+            'instructions' => 'Set a custom alphabet when using `nanoid`.',
+            'width' => 33,
+            'if' => ['id_type' => 'nanoid'],
+        ],
+        'size' => [
+            'type' => 'integer',
+            'default' => null,
+            'instructions' => 'Set the max character limit when using `nanoid`.',
+            'width' => 33,
+            'if' => ['id_type' => 'nanoid'],
         ],
     ];
 
