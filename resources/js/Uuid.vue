@@ -12,6 +12,7 @@
 
 <script>
 import { v4 as uuid } from 'uuid'
+import { nanoid, customAlphabet } from 'nanoid'
 
 export default {
   mixins: [Fieldtype],
@@ -26,11 +27,35 @@ export default {
     prefix() {
       return this.config.id_prefix || ''
     },
+    idType() {
+      return this.config.id_type || 'uuid'
+    },
+  },
+
+  methods: {
+    createId() {
+      const generator = 'generate' + (this.idType.charAt(0).toUpperCase() + this.idType.slice(1))
+
+      return this.prefix + this[generator]()
+    },
+    generateUuid() {
+      return uuid()
+    },
+    generateNanoid() {
+      const alphabet = this.config.alphabet || undefined
+      const size = this.config.size ? parseInt(this.config.size) : undefined
+
+      const generator = alphabet
+        ? customAlphabet(alphabet)
+        : nanoid
+
+      return generator(size)
+    },
   },
 
   mounted() {
     if (! this.value) {
-      setTimeout(() => this.update(this.prefix + uuid()), 100)
+      setTimeout(() => this.update(this.createId()), 100)
     }
 
     if (this.config.hidden) {
