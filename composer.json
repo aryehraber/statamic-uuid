@@ -10,7 +10,7 @@
     "homepage": "https://github.com/aryehraber/statamic-uuid",
     "license": "MIT",
     "require": {
-        "statamic/cms": "^3.0"
+        "statamic/cms": "^3.0|^4.0"
     },
     "autoload": {
         "psr-4": {
@@ -28,8 +28,8 @@
     "extra": {
         "statamic": {
             "name": "Uuid",
-            "description": "One of its kind; unlike anything else",
-            "version": "2.0.3"
+            "slug": "uuid",
+            "description": "One of its kind; unlike anything else"
         },
         "laravel": {
             "providers": [
