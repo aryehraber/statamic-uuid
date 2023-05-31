@@ -15,7 +15,7 @@ composer require aryehraber/statamic-uuid
 Publish the fieldtype assets:
 
 ```
-php please vendor:publish --tag=statamic-uuid
+php please vendor:publish --tag=uuid
 ```
 
 ## Usage
