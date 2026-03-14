@@ -1,6 +1,6 @@
-# Uuid (Statamic 3)
+# UUID
 
-**One of its kind; unlike anything else**
+**One of its kind; unlike any other**
 
 This fieldtype auto-generates UUIDs for empty fields. This can be useful if you need unique, persistent IDs for each row in a Replicator, for example.
 
